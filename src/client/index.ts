@@ -6,7 +6,8 @@ import keys from '../keys'
 const client = new Client({
 	intents: [
 		GatewayIntentBits.Guilds,
-		GatewayIntentBits.GuildMembers
+		GatewayIntentBits.GuildMembers,
+		GatewayIntentBits.MessageContent
 	],
 })
 
