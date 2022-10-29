@@ -2,7 +2,6 @@ import { Colors, EmbedBuilder, RoleResolvable } from 'discord.js'
 import { event } from '../utils'
 
 export default event('guildMemberAdd', ({ log , client}, member) => {
-	// Log member join
 	log(member.user.tag, member.joinedTimestamp)
 
 	const unverifiedRole = member.guild.roles.cache.get('1035914191246209044')

@@ -16,15 +16,19 @@ const meta = new SlashCommandBuilder()
 	.addNumberOption((option) => 
 		option
 			.setName('id')
-			.setDescription('ID Number found on your ISIC')
+			.setDescription('ID Number found on your ISIC.')
 			.setRequired(true)
 	)
 
-export default command(meta, ({ interaction }) => {
+export default command(meta, async ({ interaction }) => {
 	const email = interaction.options.getString('university_email')
 	const id = interaction.options.getNumber('id')
 
-	const isValidID = isValidStudent(id!)
+	await interaction.deferReply({
+		ephemeral: true,
+	})
+
+	const isValidID = await isValidStudent(id!)
 	const isValidUniEmail = isValidEmail(email!)
 
 	const response = new EmbedBuilder()
@@ -37,8 +41,8 @@ export default command(meta, ({ interaction }) => {
 			.setColor(Colors.Red)
 			.setFooter({ text: 'If you cannot verify, send message to Fouss#3807' })
 		
-		return interaction.reply({
-			ephemeral: true,
+
+		return await interaction.editReply({
 			embeds: [response]
 		})
 	}
@@ -51,8 +55,8 @@ export default command(meta, ({ interaction }) => {
 			{ name: 'ID Number', value: `${id}`, inline: true }
 		)
 		.setColor(Colors.Green)
+		.setFooter({ text: 'If the data are incorect click \'Cancel\' and start over.' })
 
-	// TODO: Send verification email if "Confirm" has been clicked
 	const responseActionRow = new ActionRowBuilder<ButtonBuilder>()
 			.addComponents(
 				new ButtonBuilder()
@@ -66,8 +70,7 @@ export default command(meta, ({ interaction }) => {
 					.setStyle(ButtonStyle.Danger),
 			)
 
-	return interaction.reply({
-		ephemeral: true,
+	return await interaction.editReply({
 		embeds: [response],
 		components: [responseActionRow]
 	})
