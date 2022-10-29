@@ -1,5 +1,6 @@
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, Colors, EmbedBuilder, SlashCommandBuilder } from 'discord.js'
 import { command } from '../../utils'
+import { isValidEmail, isValidStudent } from '../../verification'
 
 const meta = new SlashCommandBuilder()
 	.setName('verify')
@@ -23,12 +24,12 @@ export default command(meta, ({ interaction }) => {
 	const email = interaction.options.getString('university_email')
 	const id = interaction.options.getNumber('id')
 
-	// TODO: Verify passed data
-	const isValidStudent = false
+	const isValidID = isValidStudent(id!)
+	const isValidUniEmail = isValidEmail(email!)
 
 	const response = new EmbedBuilder()
 
-	if (!isValidStudent) {
+	if (!isValidID || !isValidUniEmail) {
 		response
 			.setAuthor({ name: 'Verification', iconURL: 'https://cdn4.iconfinder.com/data/icons/basic-ui-colour/512/ui-41-512.png' })
 			.setTitle('Verification Failed')
