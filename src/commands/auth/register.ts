@@ -54,4 +54,6 @@ export default command(meta, async ({ interaction }) => {
 	const logChannel = interaction.guild?.channels.cache.get('1036030834613956712');
 	(logChannel as TextChannel).send({ embeds: [registerEmbed] })
 
+	//TODO: Remove unverified role
+	//TODO: Add verified role
 });
