@@ -6,9 +6,9 @@ export default event('guildMemberRemove', ({ log, client }, member) => {
 
 	const leaveEmbed = new EmbedBuilder()
 		.setDescription(`<@${member.user.id}> left the server`)
-		.setColor(Colors.Red)
-
+		.setColor(Colors.Red);
+		
 	const logChannel = member.guild.channels.cache.get('1036030834613956712');
-	(logChannel as TextChannel).send({ embeds: [leaveEmbed] })
+	(logChannel as TextChannel).send({ embeds: [leaveEmbed] });
 
-})
+});
