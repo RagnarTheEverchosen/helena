@@ -48,3 +48,10 @@ export async function isUserInDatabase(id: string): Promise<boolean> {
 		return false;
 	}
 };
+
+export async function isUserTokenValid(id: string, token: number): Promise<boolean> {
+	const user = await UserModel.findOne({ 'id': id });
+	if (!user) return false;
+	if (token !== user.token ) return false;
+	return true;
+}

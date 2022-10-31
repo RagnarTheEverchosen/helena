@@ -1,5 +1,6 @@
 import { Colors, EmbedBuilder, SlashCommandBuilder, TextChannel } from 'discord.js';
 import { command } from '../../utils';
+import { isUserTokenValid } from '../../verification';
 
 const meta = new SlashCommandBuilder()
 	.setName('register')
@@ -18,8 +19,7 @@ export default command(meta, async ({ interaction }) => {
 		ephemeral: true,
 	});
 
-	//TODO: Validate token
-	const isTokenValid = false;
+	const isTokenValid = await isUserTokenValid(interaction.member?.user.id!, token!);
 
 	const response = new EmbedBuilder();
 
@@ -27,7 +27,7 @@ export default command(meta, async ({ interaction }) => {
 		response
 			.setAuthor({ name: 'Verification', iconURL: 'https://cdn4.iconfinder.com/data/icons/basic-ui-colour/512/ui-41-512.png' })
 			.setTitle('Registration Failed')
-			.setDescription('Token you provided is invalid. Please try again.')
+			.setDescription('Token you provided is invalid or you didn\'t generate your token yet')
 			.setColor(Colors.Red)
 			.setFooter({ text: 'If you cannot register, send message to Fouss#3807' });
 		
