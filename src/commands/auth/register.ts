@@ -1,6 +1,7 @@
 import { Colors, EmbedBuilder, GuildMember, RoleResolvable, SlashCommandBuilder, TextChannel } from 'discord.js';
 import { command } from '../../utils';
 import { isUserTokenValid } from '../../verification';
+import { GuildSettings } from '../../config.json';
 
 const meta = new SlashCommandBuilder()
 	.setName('register')
@@ -47,8 +48,8 @@ export default command(meta, async ({ interaction }) => {
 		embeds: [response]
 	});
 
-	const unverifiedRole = interaction.guild?.roles.cache.get('1035914191246209044');
-	const verifiedRole = interaction.guild?.roles.cache.get('1036724643635150879');
+	const unverifiedRole = interaction.guild?.roles.cache.get(GuildSettings.Roles.Unverified.ID);
+	const verifiedRole = interaction.guild?.roles.cache.get(GuildSettings.Roles.Verified.ID);
 
 	(interaction.member as GuildMember).roles.remove(unverifiedRole as RoleResolvable);
 	(interaction.member as GuildMember).roles.add(verifiedRole as RoleResolvable);
@@ -57,7 +58,7 @@ export default command(meta, async ({ interaction }) => {
 		.setDescription(`<@${interaction.member?.user.id}> registered successfuly`)
 		.setColor(Colors.Green)
 
-	const logChannel = interaction.guild?.channels.cache.get('1036030834613956712');
+	const logChannel = interaction.guild?.channels.cache.get(GuildSettings.Channels.Log.ID);
 	(logChannel as TextChannel).send({ embeds: [registerEmbed] })
 
 });
