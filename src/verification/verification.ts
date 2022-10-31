@@ -37,7 +37,7 @@ export async function isValidStudent(id: number): Promise<boolean> {
 };
 
 export function isValidEmail(email: string): boolean {
-	const expression: RegExp = /^x[A-Z0-9._%+-]+@mendelu.cz$/i;
+	const expression: RegExp = /^(x|qq)[A-Z0-9._%+-]+@mendelu.cz$/i;
 	return expression.test(email);
 };
 
