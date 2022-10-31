@@ -1,7 +1,8 @@
-import { ActionRowBuilder, ButtonBuilder, ButtonStyle, Colors, EmbedBuilder, SlashCommandBuilder } from 'discord.js';
+import { ActionRowBuilder, ButtonBuilder, ButtonStyle, Colors, EmbedBuilder, MessageComponentInteraction, SlashCommandBuilder } from 'discord.js';
 import { command } from '../../utils';
 import { isValidEmail, isValidStudent, isUserInDatabase } from '../../verification';
 import { UserModel } from '../../types';
+import { setTimeout } from 'timers/promises';
 
 const meta = new SlashCommandBuilder()
 	.setName('verify')
@@ -92,18 +93,46 @@ export default command(meta, async ({ interaction }) => {
 		components: [responseActionRow]
 	});
 
-	//TODO: Handle button clicks
+	const collector = interaction.channel?.createMessageComponentCollector();
+	collector?.on('collect', async (i: MessageComponentInteraction) => {
+		if (i.customId === 'verification_yes' && i.user.id === interaction.member?.user.id) {
+			const yesResponse = new EmbedBuilder()
+				.setAuthor({ name: 'Verification', iconURL: 'https://cdn4.iconfinder.com/data/icons/basic-ui-colour/512/ui-41-512.png' })
+				.setTitle('Verification Seccessful')
+				.setDescription('Verification email has been send')
+				.setColor(Colors.Green)
 
-	//TODO: this is bs make a proper token generator
-	const token = Math.floor(100000000 + Math.random() * 900000000);
-	const user = new UserModel({
-		id: interaction.member?.user.id,
-		token: token,
-		email: email
+			//TODO: this is bs make a proper token generator
+			const token = Math.floor(100000000 + Math.random() * 900000000);
+			const user = new UserModel({
+				id: interaction.member?.user.id,
+				token: token,
+				email: email
+			});
+
+			await user.save();
+
+			//TODO: Send email with token
+
+			await interaction.editReply({ 
+				embeds: [yesResponse], 
+				components: [] 
+			});
+
+		} else if (i.customId === 'verification_no' && i.user.id === interaction.member?.user.id) {
+			const noResponse = new EmbedBuilder()
+				.setAuthor({ name: 'Verification', iconURL: 'https://cdn4.iconfinder.com/data/icons/basic-ui-colour/512/ui-41-512.png' })
+				.setTitle('Verification Failed')
+				.setDescription('Verification has been canceled')
+				.setColor(Colors.Red)
+				.setFooter({ text: 'If you cannot verify, send message to Fouss#3807' });
+
+			await interaction.editReply({ 
+				embeds: [noResponse], 
+				components: [] 
+			});
+
+		}
 	});
-
-	await user.save();
-
-	//TODO: Send email with token
 
 });
