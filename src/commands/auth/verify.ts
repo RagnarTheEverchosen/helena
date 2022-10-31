@@ -1,6 +1,7 @@
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, Colors, EmbedBuilder, SlashCommandBuilder } from 'discord.js';
 import { command } from '../../utils';
-import { isValidEmail, isValidStudent } from '../../verification';
+import { isValidEmail, isValidStudent, isUserInDatabase } from '../../verification';
+import { UserModel } from '../../types';
 
 const meta = new SlashCommandBuilder()
 	.setName('verify')
@@ -47,7 +48,21 @@ export default command(meta, async ({ interaction }) => {
 		});
 	}
 
-	//TODO: Check if ID already is registered
+	const isInDatabase = await isUserInDatabase(interaction.member?.user.id!);
+
+	if(isInDatabase) {
+		response
+			.setAuthor({ name: 'Verification', iconURL: 'https://cdn4.iconfinder.com/data/icons/basic-ui-colour/512/ui-41-512.png' })
+			.setTitle('Verification Failed')
+			.setDescription('You have already recieved a registration token')
+			.setColor(Colors.Red)
+			.setFooter({ text: 'If you cannot verify, send message to Fouss#3807' });
+		
+
+		return await interaction.editReply({
+			embeds: [response]
+		});
+	}
 
 	response
 		.setAuthor({ name: 'Verification', iconURL: 'https://cdn4.iconfinder.com/data/icons/basic-ui-colour/512/ui-41-512.png' })
@@ -78,5 +93,16 @@ export default command(meta, async ({ interaction }) => {
 	});
 
 	//TODO: Handle button clicks
+
+	const token = Math.floor(100000000 + Math.random() * 900000000);
+	const user = new UserModel({
+		id: interaction.member?.user.id,
+		token: token,
+		email: email
+	});
+
+	await user.save();
+
+	//TODO: Send email with token
 
 });
