@@ -1,6 +1,6 @@
 import { Colors, EmbedBuilder, TextChannel } from 'discord.js';
 import { event } from '../utils';
-import { GuildSettings } from '../config.json';
+import keys from '../keys';
 
 export default event('guildMemberRemove', ({ log, client }, member) => {
 	log(member.user.tag, member.joinedTimestamp);
@@ -9,7 +9,7 @@ export default event('guildMemberRemove', ({ log, client }, member) => {
 		.setDescription(`<@${member.user.id}> left the server`)
 		.setColor(Colors.Red);
 		
-	const logChannel = member.guild.channels.cache.get(GuildSettings.Channels.Log.ID);
+	const logChannel = member.guild.channels.cache.get(keys.logChannel);
 	(logChannel as TextChannel).send({ embeds: [leaveEmbed] });
 
 });

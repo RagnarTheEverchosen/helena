@@ -3,7 +3,10 @@ import { Keys } from '../types';
 const keys: Keys = {
 	clientToken: process.env.CLIENT_TOKEN ?? 'nil',
 	testGuild: process.env.TEST_GUILD ?? 'nil',
-	databaseToken: process.env.DATABASE_TOKEN ?? 'nil'
+	databaseUrl: process.env.DATABASE_URL ?? 'nil',
+	unverifiedRole: process.env.UNVERIFIED_ROLE ?? 'nil',
+	verifiedRole: process.env.VERIFIED_ROLE ?? 'nil',
+	logChannel: process.env.LOG_CHANNEL ?? 'nil'
 };
 
 if (Object.values(keys).includes('nil'))

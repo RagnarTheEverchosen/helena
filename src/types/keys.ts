@@ -1,5 +1,8 @@
 export interface Keys {
 	clientToken: string
 	testGuild: string
-	databaseToken: string
+	databaseUrl: string
+	unverifiedRole: string
+	verifiedRole: string
+	logChannel: string
 };

@@ -1,7 +1,7 @@
 import { connect } from 'mongoose';
 import keys from '../keys';
 
-connect(keys.databaseToken)
+connect(keys.databaseUrl)
 	.then(() => {
 		console.log('[Database] Connected successfuly')
 	})
