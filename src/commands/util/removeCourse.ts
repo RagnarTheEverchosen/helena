@@ -2,12 +2,12 @@ import { ChannelType, Colors, EmbedBuilder, SlashCommandBuilder, TextChannel } f
 import { command } from '../../utils';
 
 const meta = new SlashCommandBuilder()
-	.setName('addcourse')
+	.setName('removecourse')
 	.setDescription('Adds course/courses')
 	.addStringOption((option) => 
 		option
 			.setName('input')
-			.setDescription('Course or list of courses you want to see.')
+			.setDescription('Course or list of courses you don\'t want to see.')
 			.setMinLength(1)
 			.setMaxLength(2000)
 			.setRequired(true)
@@ -32,7 +32,7 @@ export default command(meta, async ({ interaction }) => {
 			continue;
 		};
 
-		courseChannel.permissionOverwrites.edit(interaction.member?.user.id as string, { ViewChannel: true });
+		courseChannel.permissionOverwrites.edit(interaction.member?.user.id as string, { ViewChannel: false });
 		courseSuccess.push(course.toUpperCase());
 
 	};
@@ -40,14 +40,14 @@ export default command(meta, async ({ interaction }) => {
 	const response = new EmbedBuilder()
 		.setTitle('Selected Courses')
 		.setColor('#00459e')
-		.setFooter({ text: 'If the course failed to add, it probably doesn\'t exist or was misspelled.\nIf you are having problems adding courses contact one of the moderators.' });
+		.setFooter({ text: 'If the course failed to remove, it probably doesn\'t exist or was misspelled.\nIf you are having problems adding courses contact one of the moderators.' });
 
 	for (const course of courseSuccess) {
-		response.addFields({ name: course, value: 'Successfuly added course' });
+		response.addFields({ name: course, value: 'Successfuly removed course' });
 	}
 
 	for (const course of courseFailed) {
-		response.addFields({ name: course, value: 'Failed to add course' });
+		response.addFields({ name: course, value: 'Failed to remove course' });
 	}
 
 
