@@ -10,9 +10,6 @@
     "deploy": "cross-env IS_SCRIPT=true ts-node src/scripts/deploy",
     "deploy-prod": "cross-env NODE_ENV=production npm run deploy"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/cheerio": "^0.22.31",
