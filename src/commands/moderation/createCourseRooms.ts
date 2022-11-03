@@ -15,18 +15,41 @@ export default command(meta, async ({ interaction }) => {
 
 	const response = new EmbedBuilder();
 
-	PREDMETY.forEach((course) => {
+	PREDMETY.forEach(async (course) => {
 
-		if (interaction.guild?.channels.cache.find(c => c.name === course.ZKRATKA.toLowerCase() && c.type === ChannelType.GuildText)) return;
+		if (await interaction.guild?.channels.cache.find(c => c.name === course.ZKRATKA.toLowerCase() && c.type === ChannelType.GuildText)) return;
 
 		interaction.guild?.channels.create({
 			name: course.ZKRATKA,
 			topic: course.NAZEV,
-			type: ChannelType.GuildText
+			type: ChannelType.GuildText,
+			permissionOverwrites: [
+				{
+					id: keys.unverifiedRole,
+					deny: [PermissionFlagsBits.ViewChannel],
+				},
+				{
+					id: keys.verifiedRole,
+					deny: [PermissionFlagsBits.ViewChannel],
+				}
+			]
 		})
 		.then(async (channel) => {
-			let category = interaction.guild?.channels.cache.find(c => c.name === "PŘEDMĚTY" && c.type === ChannelType.GuildCategory && c.children.cache.size < 50) as CategoryChannel;
-			if (!category) category = await interaction.guild?.channels.create({ name: 'PŘEDMĚTY', type: ChannelType.GuildCategory }) as CategoryChannel;
+			let category = await interaction.guild?.channels.cache.find(c => c.name === "PŘEDMĚTY" && c.type === ChannelType.GuildCategory && c.children.cache.size < 50) as CategoryChannel;
+			if (!category) category = await interaction.guild?.channels.create({ 
+				name: 'PŘEDMĚTY',
+				type: ChannelType.GuildCategory,
+				permissionOverwrites: [
+					{
+						id: keys.unverifiedRole,
+						deny: [PermissionFlagsBits.ViewChannel],
+					},
+					{
+						id: keys.verifiedRole,
+						deny: [PermissionFlagsBits.ViewChannel],
+					}
+				]
+			}) as CategoryChannel;
 			if (await category.children.cache.size == 50) category = await interaction.guild?.channels.create({ 
 				name: 'PŘEDMĚTY',
 				type: ChannelType.GuildCategory,
