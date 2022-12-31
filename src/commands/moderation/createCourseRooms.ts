@@ -13,10 +13,11 @@ export default command(meta, async ({ interaction }) => {
 		ephemeral: true,
 	});
 
-	const response = new EmbedBuilder();
+	const response = new EmbedBuilder()
+			.setTitle('Course Creation')
+			.setColor('#00459e');
 
 	PREDMETY.forEach(async (course) => {
-
 		if (await interaction.guild?.channels.cache.find(c => c.name === course.ZKRATKA.toLowerCase() && c.type === ChannelType.GuildText)) return;
 
 		interaction.guild?.channels.create({
@@ -33,51 +34,20 @@ export default command(meta, async ({ interaction }) => {
 					deny: [PermissionFlagsBits.ViewChannel],
 				}
 			]
-		})
-		.then(async (channel) => {
-			let category = await interaction.guild?.channels.cache.find(c => c.name === "PŘEDMĚTY" && c.type === ChannelType.GuildCategory && c.children.cache.size < 50) as CategoryChannel;
-			if (!category) category = await interaction.guild?.channels.create({ 
-				name: 'PŘEDMĚTY',
-				type: ChannelType.GuildCategory,
-				permissionOverwrites: [
-					{
-						id: keys.unverifiedRole,
-						deny: [PermissionFlagsBits.ViewChannel],
-					},
-					{
-						id: keys.verifiedRole,
-						deny: [PermissionFlagsBits.ViewChannel],
-					}
-				]
-			}) as CategoryChannel;
-			if (await category.children.cache.size == 50) category = await interaction.guild?.channels.create({ 
-				name: 'PŘEDMĚTY',
-				type: ChannelType.GuildCategory,
-				permissionOverwrites: [
-					{
-						id: keys.unverifiedRole,
-						deny: [PermissionFlagsBits.ViewChannel]
-					},
-					{
-						id: keys.verifiedRole,
-						deny: [PermissionFlagsBits.ViewChannel]
-					}
-				]
-			}) as CategoryChannel;
-			await channel.setParent(category.id);
-		})
-		.catch(async (err) => {
-			console.error(err);
-			response
-				.setTitle('Error')
-				.setDescription('An error accured while creating channel.')
-				.setColor(Colors.Red)
-
-			await interaction.editReply({
-				embeds: [response]
-			});
 		});
 
+		response.setDescription(`Course ${course.ZKRATKA} added`)
+
+		interaction.editReply({
+			embeds: [response]
+		});
+
+	});
+
+	response.setDescription('Course rooms created')
+
+	await interaction.editReply({
+		embeds: [response]
 	});
 
 });

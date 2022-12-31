@@ -2,15 +2,15 @@
    "PREDMETY":[
       {
          "NAZEV":"Administrace databázových systémů",
-         "ZKRATKA":"EBC-ADS"
+         "ZKRATKA":"ADS"
       },
       {
          "NAZEV":"Akademické dovednosti",
-         "ZKRATKA":"EBC-AKD"
+         "ZKRATKA":"AKD"
       },
       {
          "NAZEV":"Akademické psaní",
-         "ZKRATKA":"EBC-AKP"
+         "ZKRATKA":"AKP"
       },
       {
          "NAZEV":"Algebra a její aplikace",
@@ -18,11 +18,11 @@
       },
       {
          "NAZEV":"Algoritmizace",
-         "ZKRATKA":"EBC-ALG"
+         "ZKRATKA":"ALG"
       },
       {
          "NAZEV":"Algoritmizace – skriptování",
-         "ZKRATKA":"EBC-ALGS"
+         "ZKRATKA":"ALGS"
       },
       {
          "NAZEV":"Analýza finančních dat",
@@ -42,19 +42,19 @@
       },
       {
          "NAZEV":"Aplikovaná práce s daty v marketingu",
-         "ZKRATKA":"EBC-APDM"
+         "ZKRATKA":"APDM"
       },
       {
          "NAZEV":"Aplikovaná statistika",
-         "ZKRATKA":"EBC-AST"
+         "ZKRATKA":"AST"
       },
       {
          "NAZEV":"Architektura operačních systémů",
-         "ZKRATKA":"EBC-AOS"
+         "ZKRATKA":"AOS"
       },
       {
          "NAZEV":"Architektura počítačů",
-         "ZKRATKA":"EBC-AP"
+         "ZKRATKA":"AP"
       },
       {
          "NAZEV":"Architektury software a služeb",
@@ -66,7 +66,7 @@
       },
       {
          "NAZEV":"Automatizace a řízení",
-         "ZKRATKA":"EBC-AR"
+         "ZKRATKA":"AR"
       },
       {
          "NAZEV":"Automatizační technika",
@@ -82,7 +82,7 @@
       },
       {
          "NAZEV":"Bakalářská práce",
-         "ZKRATKA":"EBC-BP"
+         "ZKRATKA":"BP"
       },
       {
          "NAZEV":"Bakalářská práce IS/ICT",
@@ -90,7 +90,7 @@
       },
       {
          "NAZEV":"Bakalářská práce IS/ICT",
-         "ZKRATKA":"EBC-BPII"
+         "ZKRATKA":"BPII"
       },
       {
          "NAZEV":"Bakalářská práce Kybernetika",
@@ -106,23 +106,23 @@
       },
       {
          "NAZEV":"Bakalářský seminář IS/ICT",
-         "ZKRATKA":"EBC-BSII"
+         "ZKRATKA":"BSII"
       },
       {
          "NAZEV":"Bakalářský seminář 1",
-         "ZKRATKA":"EBC-BS1"
+         "ZKRATKA":"BS1"
       },
       {
          "NAZEV":"Bakalářský seminář 2",
-         "ZKRATKA":"EBC-BS2"
+         "ZKRATKA":"BS2"
       },
       {
          "NAZEV":"Bankovní a pojistné případové studie",
-         "ZKRATKA":"EBC-BPPS"
+         "ZKRATKA":"BPPS"
       },
       {
          "NAZEV":"Bankovnictví 1",
-         "ZKRATKA":"EBC-BA"
+         "ZKRATKA":"BA"
       },
       {
          "NAZEV":"Bankovnictví 2",
@@ -130,7 +130,7 @@
       },
       {
          "NAZEV":"Bezpečnostní technologie",
-         "ZKRATKA":"EBC-BT"
+         "ZKRATKA":"BT"
       },
       {
          "NAZEV":"Big Data v oficiální statistice",
@@ -138,7 +138,7 @@
       },
       {
          "NAZEV":"Burzy a cenné papíry",
-         "ZKRATKA":"EBC-BCP"
+         "ZKRATKA":"BCP"
       },
       {
          "NAZEV":"Business Intelligence a datové sklady",
@@ -146,11 +146,11 @@
       },
       {
          "NAZEV":"Cestovní ruch",
-         "ZKRATKA":"EBC-CR"
+         "ZKRATKA":"CR"
       },
       {
          "NAZEV":"Coaching",
-         "ZKRATKA":"EBC-C"
+         "ZKRATKA":"C"
       },
       {
          "NAZEV":"Controlling v AJ",
@@ -162,7 +162,7 @@
       },
       {
          "NAZEV":"Daňová soustava",
-         "ZKRATKA":"EBC-DS"
+         "ZKRATKA":"DS"
       },
       {
          "NAZEV":"Daňové teorie",
@@ -170,7 +170,7 @@
       },
       {
          "NAZEV":"Databázové systémy a návrh databází",
-         "ZKRATKA":"EBC-DSND"
+         "ZKRATKA":"DSND"
       },
       {
          "NAZEV":"Demografie",
@@ -178,7 +178,7 @@
       },
       {
          "NAZEV":"Destinační management",
-         "ZKRATKA":"EBC-DEMA"
+         "ZKRATKA":"DEMA"
       },
       {
          "NAZEV":"Digitální asistenti",
@@ -222,7 +222,7 @@
       },
       {
          "NAZEV":"Ekonometrie 1",
-         "ZKRATKA":"EBC-EKM"
+         "ZKRATKA":"EKM"
       },
       {
          "NAZEV":"Ekonometrie 2",
@@ -230,11 +230,11 @@
       },
       {
          "NAZEV":"Ekonomická analýza",
-         "ZKRATKA":"EBC-EKAN"
+         "ZKRATKA":"EKAN"
       },
       {
          "NAZEV":"Ekonomické informační soustavy",
-         "ZKRATKA":"EBC-EKIS"
+         "ZKRATKA":"EKIS"
       },
       {
          "NAZEV":"Ekonomicko matematické metody",
@@ -246,15 +246,15 @@
       },
       {
          "NAZEV":"Ekonomie",
-         "ZKRATKA":"EBC-EKON"
+         "ZKRATKA":"EKON"
       },
       {
          "NAZEV":"Ekonomie práce",
-         "ZKRATKA":"EBC-EKPR"
+         "ZKRATKA":"EKPR"
       },
       {
          "NAZEV":"Ekonomie turizmu",
-         "ZKRATKA":"EBC-EKTU"
+         "ZKRATKA":"EKTU"
       },
       {
          "NAZEV":"Ekonomika podnikových procesů",
@@ -262,7 +262,7 @@
       },
       {
          "NAZEV":"Elektronický marketing",
-         "ZKRATKA":"EBC-EM"
+         "ZKRATKA":"EM"
       },
       {
          "NAZEV":"Empirická ekonomie",
@@ -270,7 +270,7 @@
       },
       {
          "NAZEV":"Energetická politika",
-         "ZKRATKA":"EBC-EP"
+         "ZKRATKA":"EP"
       },
       {
          "NAZEV":"E-technologie",
@@ -278,15 +278,15 @@
       },
       {
          "NAZEV":"Evropská integrace a globalizace",
-         "ZKRATKA":"EBC-EIG"
+         "ZKRATKA":"EIG"
       },
       {
          "NAZEV":"Financování regionálního rozvoje",
-         "ZKRATKA":"EBC-FRR"
+         "ZKRATKA":"FRR"
       },
       {
          "NAZEV":"Finanční analýza podniku",
-         "ZKRATKA":"EBC-FAP"
+         "ZKRATKA":"FAP"
       },
       {
          "NAZEV":"Finanční controlling",
@@ -302,15 +302,15 @@
       },
       {
          "NAZEV":"Finanční trhy",
-         "ZKRATKA":"EBC-FT"
+         "ZKRATKA":"FT"
       },
       {
          "NAZEV":"Finanční účetnictví",
-         "ZKRATKA":"EBC-ACCAF3"
+         "ZKRATKA":"ACCAF3"
       },
       {
          "NAZEV":"Finanční účetnictví 1",
-         "ZKRATKA":"EBC-FU"
+         "ZKRATKA":"FU"
       },
       {
          "NAZEV":"Finanční účetnictví 2",
@@ -318,7 +318,7 @@
       },
       {
          "NAZEV":"Formální jazyky a překladače",
-         "ZKRATKA":"EBC-FJP"
+         "ZKRATKA":"FJP"
       },
       {
          "NAZEV":"Geografické informační systémy",
@@ -326,19 +326,19 @@
       },
       {
          "NAZEV":"Geografie v cestovním ruchu",
-         "ZKRATKA":"EBC-GCR"
+         "ZKRATKA":"GCR"
       },
       {
          "NAZEV":"Grafika a design",
-         "ZKRATKA":"EBC-GD"
+         "ZKRATKA":"GD"
       },
       {
          "NAZEV":"Historie a kultura v cestovním ruchu",
-         "ZKRATKA":"EBC-HKCR"
+         "ZKRATKA":"HKCR"
       },
       {
          "NAZEV":"Hospodářská politika",
-         "ZKRATKA":"EBC-HPO"
+         "ZKRATKA":"HPO"
       },
       {
          "NAZEV":"Hospodářská politika 2",
@@ -346,7 +346,7 @@
       },
       {
          "NAZEV":"Hotelový management",
-         "ZKRATKA":"EBC-HOMA"
+         "ZKRATKA":"HOMA"
       },
       {
          "NAZEV":"Chytré systémy",
@@ -354,7 +354,7 @@
       },
       {
          "NAZEV":"Implementace směrování a služeb CCNP ENARSI",
-         "ZKRATKA":"EBC-CPER"
+         "ZKRATKA":"CPER"
       },
       {
          "NAZEV":"Informační systémy a technologie",
@@ -362,11 +362,11 @@
       },
       {
          "NAZEV":"Informatika",
-         "ZKRATKA":"EBC-I"
+         "ZKRATKA":"I"
       },
       {
          "NAZEV":"Internet věcí",
-         "ZKRATKA":"EBC-IV"
+         "ZKRATKA":"IV"
       },
       {
          "NAZEV":"Interní audit",
@@ -386,7 +386,7 @@
       },
       {
          "NAZEV":"ITIL",
-         "ZKRATKA":"EBC-ITIL"
+         "ZKRATKA":"ITIL"
       },
       {
          "NAZEV":"Java aplikace",
@@ -402,7 +402,7 @@
       },
       {
          "NAZEV":"Koncepce a inovace v IS/ICT",
-         "ZKRATKA":"EBC-KIII"
+         "ZKRATKA":"KIII"
       },
       {
          "NAZEV":"Kroužek aplikované psychologie a leadershipu",
@@ -450,7 +450,7 @@
       },
       {
          "NAZEV":"Kvantitativní analýza rizika",
-         "ZKRATKA":"EBC-KAR"
+         "ZKRATKA":"KAR"
       },
       {
          "NAZEV":"Kvantitativní hospodářská politika",
@@ -474,7 +474,7 @@
       },
       {
          "NAZEV":"Makroekonomická analýza",
-         "ZKRATKA":"EBC-MAAN"
+         "ZKRATKA":"MAAN"
       },
       {
          "NAZEV":"Makroekonomická statistika",
@@ -482,7 +482,7 @@
       },
       {
          "NAZEV":"Makroekonomie 1",
-         "ZKRATKA":"EBC-MA"
+         "ZKRATKA":"MA"
       },
       {
          "NAZEV":"Makroekonomie 2",
@@ -490,7 +490,7 @@
       },
       {
          "NAZEV":"Management",
-         "ZKRATKA":"EBC-MAN"
+         "ZKRATKA":"MAN"
       },
       {
          "NAZEV":"Management vývoje IS",
@@ -502,11 +502,11 @@
       },
       {
          "NAZEV":"Manažerská psychologie",
-         "ZKRATKA":"EBC-MP"
+         "ZKRATKA":"MP"
       },
       {
          "NAZEV":"Manažerská simulační hra v cestovním ruchu",
-         "ZKRATKA":"EBC-MSHCR"
+         "ZKRATKA":"MSHCR"
       },
       {
          "NAZEV":"Manažerské účetnictví",
@@ -518,7 +518,7 @@
       },
       {
          "NAZEV":"Marketing 1",
-         "ZKRATKA":"EBC-MAR"
+         "ZKRATKA":"MAR"
       },
       {
          "NAZEV":"Marketing 2",
@@ -526,23 +526,23 @@
       },
       {
          "NAZEV":"Marketingová komunikace",
-         "ZKRATKA":"EBC-MK"
+         "ZKRATKA":"MK"
       },
       {
          "NAZEV":"Matematika",
-         "ZKRATKA":"EBC-MT"
+         "ZKRATKA":"MT"
       },
       {
          "NAZEV":"Matematika 1",
-         "ZKRATKA":"EBC-MT1"
+         "ZKRATKA":"MT1"
       },
       {
          "NAZEV":"Matematika 2",
-         "ZKRATKA":"EBC-MT2"
+         "ZKRATKA":"MT2"
       },
       {
          "NAZEV":"Matlab",
-         "ZKRATKA":"EBC-M"
+         "ZKRATKA":"M"
       },
       {
          "NAZEV":"Mezinárodní finance",
@@ -566,7 +566,7 @@
       },
       {
          "NAZEV":"Mikroekonomie 1",
-         "ZKRATKA":"EBC-MI"
+         "ZKRATKA":"MI"
       },
       {
          "NAZEV":"Mikroekonomie 2",
@@ -586,7 +586,7 @@
       },
       {
          "NAZEV":"Moderní informační technologie",
-         "ZKRATKA":"EBC-MIT"
+         "ZKRATKA":"MIT"
       },
       {
          "NAZEV":"Nasazení software a služeb",
@@ -602,7 +602,7 @@
       },
       {
          "NAZEV":"Nepřímé daně",
-         "ZKRATKA":"EBC-ND"
+         "ZKRATKA":"ND"
       },
       {
          "NAZEV":"Neuronové sítě",
@@ -610,27 +610,27 @@
       },
       {
          "NAZEV":"Obchodní logistika",
-         "ZKRATKA":"EBC-OL"
+         "ZKRATKA":"OL"
       },
       {
          "NAZEV":"Obchodní operace",
-         "ZKRATKA":"EBC-OO"
+         "ZKRATKA":"OO"
       },
       {
          "NAZEV":"Obchodní právo 1",
-         "ZKRATKA":"EBC-OP1"
+         "ZKRATKA":"OP1"
       },
       {
          "NAZEV":"Obchodní právo 2",
-         "ZKRATKA":"EBC-OP2"
+         "ZKRATKA":"OP2"
       },
       {
          "NAZEV":"Oceňování podniku",
-         "ZKRATKA":"EBC-OCP"
+         "ZKRATKA":"OCP"
       },
       {
          "NAZEV":"Odborná praxe",
-         "ZKRATKA":"EBC-P6"
+         "ZKRATKA":"P6"
       },
       {
          "NAZEV":"Odborná praxe",
@@ -642,7 +642,7 @@
       },
       {
          "NAZEV":"Odborná praxe IS/ICT",
-         "ZKRATKA":"EBC-P6II"
+         "ZKRATKA":"P6II"
       },
       {
          "NAZEV":"Odborná praxe IS/ICT",
@@ -650,19 +650,19 @@
       },
       {
          "NAZEV":"Odborná praxe 1",
-         "ZKRATKA":"EBC-P112"
+         "ZKRATKA":"P112"
       },
       {
          "NAZEV":"Odborná praxe 1",
-         "ZKRATKA":"EBC-P115"
+         "ZKRATKA":"P115"
       },
       {
          "NAZEV":"Odborná praxe 2",
-         "ZKRATKA":"EBC-P212"
+         "ZKRATKA":"P212"
       },
       {
          "NAZEV":"Odborná praxe 2",
-         "ZKRATKA":"EBC-P215"
+         "ZKRATKA":"P215"
       },
       {
          "NAZEV":"Odvětvová ekonomika",
@@ -670,7 +670,7 @@
       },
       {
          "NAZEV":"Ochrana spotřebitele 1",
-         "ZKRATKA":"EBC-OS"
+         "ZKRATKA":"OS"
       },
       {
          "NAZEV":"Ochrana spotřebitele 2",
@@ -678,11 +678,11 @@
       },
       {
          "NAZEV":"Operační systém Linux",
-         "ZKRATKA":"EBC-LINX"
+         "ZKRATKA":"LINX"
       },
       {
          "NAZEV":"Operační systém Windows",
-         "ZKRATKA":"EBC-WIN"
+         "ZKRATKA":"WIN"
       },
       {
          "NAZEV":"Operační výzkum",
@@ -690,15 +690,15 @@
       },
       {
          "NAZEV":"Osobní a rodinné finance",
-         "ZKRATKA":"EBC-ORF"
+         "ZKRATKA":"ORF"
       },
       {
          "NAZEV":"Personalistika",
-         "ZKRATKA":"EBC-PER"
+         "ZKRATKA":"PER"
       },
       {
          "NAZEV":"Počítačové sítě",
-         "ZKRATKA":"EBC-PS"
+         "ZKRATKA":"PS"
       },
       {
          "NAZEV":"Počítačové vidění",
@@ -706,15 +706,15 @@
       },
       {
          "NAZEV":"Podnikání v cestovním ruchu",
-         "ZKRATKA":"EBC-PCR"
+         "ZKRATKA":"PCR"
       },
       {
          "NAZEV":"Podnikatelský plán",
-         "ZKRATKA":"EBC-PP"
+         "ZKRATKA":"PP"
       },
       {
          "NAZEV":"Podniková ekonomika 1",
-         "ZKRATKA":"EBC-PE"
+         "ZKRATKA":"PE"
       },
       {
          "NAZEV":"Podniková ekonomika 2",
@@ -722,27 +722,27 @@
       },
       {
          "NAZEV":"Podnikové finance",
-         "ZKRATKA":"EBC-PF"
+         "ZKRATKA":"PF"
       },
       {
          "NAZEV":"Pojišťovnictví 1",
-         "ZKRATKA":"EBC-PO"
+         "ZKRATKA":"PO"
       },
       {
          "NAZEV":"Pokročilá práce s databázovým systémem",
-         "ZKRATKA":"EBC-PPDS"
+         "ZKRATKA":"PPDS"
       },
       {
          "NAZEV":"Pokročilá práce s daty",
-         "ZKRATKA":"EBC-PPD"
+         "ZKRATKA":"PPD"
       },
       {
          "NAZEV":"Pokročilá prezentace dat",
-         "ZKRATKA":"EBC-PPRD"
+         "ZKRATKA":"PPRD"
       },
       {
          "NAZEV":"Pokročilé směrování a přepínání CCNA3",
-         "ZKRATKA":"EBC-PSCI"
+         "ZKRATKA":"PSCI"
       },
       {
          "NAZEV":"Pokročilé statistické metody a modely",
@@ -754,23 +754,23 @@
       },
       {
          "NAZEV":"Politologie",
-         "ZKRATKA":"EBC-POL"
+         "ZKRATKA":"POL"
       },
       {
          "NAZEV":"Pracovní právo a právo sociálního zabezpečení",
-         "ZKRATKA":"EBC-PPSZ"
+         "ZKRATKA":"PPSZ"
       },
       {
          "NAZEV":"Právní pomoc v podnikání",
-         "ZKRATKA":"EBC-PPP"
+         "ZKRATKA":"PPP"
       },
       {
          "NAZEV":"Právní vztahy k nemovitostem",
-         "ZKRATKA":"EBC-PVN"
+         "ZKRATKA":"PVN"
       },
       {
          "NAZEV":"Právo",
-         "ZKRATKA":"EBC-P"
+         "ZKRATKA":"P"
       },
       {
          "NAZEV":"Právo informačních systémů",
@@ -782,7 +782,7 @@
       },
       {
          "NAZEV":"Principy zpracování dat",
-         "ZKRATKA":"EBC-PZD"
+         "ZKRATKA":"PZD"
       },
       {
          "NAZEV":"Proces internacionalizace podniku",
@@ -790,23 +790,23 @@
       },
       {
          "NAZEV":"Programovací jazyk C#",
-         "ZKRATKA":"EBC-PCH"
+         "ZKRATKA":"PCH"
       },
       {
          "NAZEV":"Programovací jazyk C++",
-         "ZKRATKA":"EBC-PCP"
+         "ZKRATKA":"PCP"
       },
       {
          "NAZEV":"Programovací jazyk Java",
-         "ZKRATKA":"EBC-PJ"
+         "ZKRATKA":"PJ"
       },
       {
          "NAZEV":"Programovací jazyk Perl",
-         "ZKRATKA":"EBC-PRL"
+         "ZKRATKA":"PRL"
       },
       {
          "NAZEV":"Programovací jazyk Python",
-         "ZKRATKA":"EBC-PYT"
+         "ZKRATKA":"PYT"
       },
       {
          "NAZEV":"Programovací techniky",
@@ -822,15 +822,15 @@
       },
       {
          "NAZEV":"Propedeutika daňové gramotnosti 1",
-         "ZKRATKA":"EBC-PDG1"
+         "ZKRATKA":"PDG1"
       },
       {
          "NAZEV":"Propedeutika daňové gramotnosti 3",
-         "ZKRATKA":"EBC-PDG3"
+         "ZKRATKA":"PDG3"
       },
       {
          "NAZEV":"Protokoly počítačových sítí",
-         "ZKRATKA":"EBC-PPS"
+         "ZKRATKA":"PPS"
       },
       {
          "NAZEV":"Průmyslová robotika",
@@ -842,7 +842,7 @@
       },
       {
          "NAZEV":"Přepínání a směrování v počítačových sítích",
-         "ZKRATKA":"EBC-PSPS"
+         "ZKRATKA":"PSPS"
       },
       {
          "NAZEV":"Převodní ceny",
@@ -850,11 +850,11 @@
       },
       {
          "NAZEV":"Přímé daně",
-         "ZKRATKA":"EBC-PD"
+         "ZKRATKA":"PD"
       },
       {
          "NAZEV":"Přípravný kurz: Matematika",
-         "ZKRATKA":"EBC-MT0"
+         "ZKRATKA":"MT0"
       },
       {
          "NAZEV":"Psychologie a sociologie pro HR manažery",
@@ -862,7 +862,7 @@
       },
       {
          "NAZEV":"Reformy české a světové ekonomiky",
-         "ZKRATKA":"EBC-RCSE"
+         "ZKRATKA":"RCSE"
       },
       {
          "NAZEV":"Regionální statistika",
@@ -870,7 +870,7 @@
       },
       {
          "NAZEV":"Reprezentace dat v počítači",
-         "ZKRATKA":"EBC-RDP"
+         "ZKRATKA":"RDP"
       },
       {
          "NAZEV":"Řízená odborná praxe",
@@ -898,7 +898,7 @@
       },
       {
          "NAZEV":"Řízení odběratelsko-dodavatelských vztahů",
-         "ZKRATKA":"EBC-RODV"
+         "ZKRATKA":"RODV"
       },
       {
          "NAZEV":"Řízení rizik v komerční pojišťovně",
@@ -910,7 +910,7 @@
       },
       {
          "NAZEV":"Seminář destinačního managementu",
-         "ZKRATKA":"EBC-SDM"
+         "ZKRATKA":"SDM"
       },
       {
          "NAZEV":"Seminář finančního řízení podniků",
@@ -922,11 +922,11 @@
       },
       {
          "NAZEV":"Seminář manažerských dovedností",
-         "ZKRATKA":"EBC-SMD"
+         "ZKRATKA":"SMD"
       },
       {
          "NAZEV":"Seminář merchandising",
-         "ZKRATKA":"EBC-SM"
+         "ZKRATKA":"SM"
       },
       {
          "NAZEV":"Seminář mezinárodního leadershipu",
@@ -934,15 +934,15 @@
       },
       {
          "NAZEV":"Seminář multimediální komunikace",
-         "ZKRATKA":"EBC-SMK"
+         "ZKRATKA":"SMK"
       },
       {
          "NAZEV":"Seminář obchodního jednání",
-         "ZKRATKA":"EBC-SOJ"
+         "ZKRATKA":"SOJ"
       },
       {
          "NAZEV":"Seminář řízení obchodních týmů",
-         "ZKRATKA":"EBC-SROT"
+         "ZKRATKA":"SROT"
       },
       {
          "NAZEV":"Seminář řízení podniku",
@@ -950,7 +950,7 @@
       },
       {
          "NAZEV":"Seminář řízení projektů v cestovním ruchu",
-         "ZKRATKA":"EBC-SRPCR"
+         "ZKRATKA":"SRPCR"
       },
       {
          "NAZEV":"Sociální a ekonomické aplikace GIS",
@@ -962,7 +962,7 @@
       },
       {
          "NAZEV":"Sociologie a sociální psychologie",
-         "ZKRATKA":"EBC-SSP"
+         "ZKRATKA":"SSP"
       },
       {
          "NAZEV":"Specializační diplomový seminář",
@@ -970,11 +970,11 @@
       },
       {
          "NAZEV":"Společenská odpovědnost firem",
-         "ZKRATKA":"EBC-SOF"
+         "ZKRATKA":"SOF"
       },
       {
          "NAZEV":"Správa a údržba IS",
-         "ZKRATKA":"EBC-SUIS"
+         "ZKRATKA":"SUIS"
       },
       {
          "NAZEV":"Správa daní",
@@ -982,11 +982,11 @@
       },
       {
          "NAZEV":"Správa síťových zařízení Juniper",
-         "ZKRATKA":"EBC-SSZJ"
+         "ZKRATKA":"SSZJ"
       },
       {
          "NAZEV":"Správa síťových zařízení MikroTik",
-         "ZKRATKA":"EBC-SSZM"
+         "ZKRATKA":"SSZM"
       },
       {
          "NAZEV":"Statistická analýza v software Statistica",
@@ -994,11 +994,11 @@
       },
       {
          "NAZEV":"Statistika",
-         "ZKRATKA":"EBC-ST"
+         "ZKRATKA":"ST"
       },
       {
          "NAZEV":"Státní bakalářská zkouška",
-         "ZKRATKA":"EBC-SBZ"
+         "ZKRATKA":"SBZ"
       },
       {
          "NAZEV":"Státní bakalářská zkouška",
@@ -1026,7 +1026,7 @@
       },
       {
          "NAZEV":"Světová ekonomika",
-         "ZKRATKA":"EBC-SE"
+         "ZKRATKA":"SE"
       },
       {
          "NAZEV":"Systémová integrace",
@@ -1034,7 +1034,7 @@
       },
       {
          "NAZEV":"Systémy na podporu rozhodování",
-         "ZKRATKA":"EBC-SPR"
+         "ZKRATKA":"SPR"
       },
       {
          "NAZEV":"Systémy oficiální statistiky",
@@ -1046,7 +1046,7 @@
       },
       {
          "NAZEV":"Technologie pro podnikové sítě CCNP ENCORE",
-         "ZKRATKA":"EBC-CPEC"
+         "ZKRATKA":"CPEC"
       },
       {
          "NAZEV":"Teoretická informatika",
@@ -1054,7 +1054,7 @@
       },
       {
          "NAZEV":"Teoretické základy informatiky",
-         "ZKRATKA":"EBC-TZI"
+         "ZKRATKA":"TZI"
       },
       {
          "NAZEV":"Teorie grafů",
@@ -1062,11 +1062,11 @@
       },
       {
          "NAZEV":"Účetní a daňové případové studie",
-         "ZKRATKA":"EBC-UDPS"
+         "ZKRATKA":"UDPS"
       },
       {
          "NAZEV":"Účetní software",
-         "ZKRATKA":"EBC-US"
+         "ZKRATKA":"US"
       },
       {
          "NAZEV":"Účetnictví a daně",
@@ -1074,7 +1074,7 @@
       },
       {
          "NAZEV":"Účetnictví a daně v cestovním ruchu",
-         "ZKRATKA":"EBC-UDCR"
+         "ZKRATKA":"UDCR"
       },
       {
          "NAZEV":"Účetnictví a zdanění neziskových organizací",
@@ -1090,39 +1090,39 @@
       },
       {
          "NAZEV":"Úvod do ICT",
-         "ZKRATKA":"EBC-UICT"
+         "ZKRATKA":"UICT"
       },
       {
          "NAZEV":"Úvod do studia kvantitativních předmětů",
-         "ZKRATKA":"EBC-USKP"
+         "ZKRATKA":"USKP"
       },
       {
          "NAZEV":"Užitá ekonometrie",
-         "ZKRATKA":"EBC-UEKM"
+         "ZKRATKA":"UEKM"
       },
       {
          "NAZEV":"Užitá matematika",
-         "ZKRATKA":"EBC-UMT"
+         "ZKRATKA":"UMT"
       },
       {
          "NAZEV":"Užitá matematika a statistika",
-         "ZKRATKA":"EBC-UMS"
+         "ZKRATKA":"UMS"
       },
       {
          "NAZEV":"Užitá statistika",
-         "ZKRATKA":"EBC-UST"
+         "ZKRATKA":"UST"
       },
       {
          "NAZEV":"Užité kvantitativní metody",
-         "ZKRATKA":"EBC-UKM"
+         "ZKRATKA":"UKM"
       },
       {
          "NAZEV":"Veřejná správa",
-         "ZKRATKA":"EBC-VS"
+         "ZKRATKA":"VS"
       },
       {
          "NAZEV":"Veřejné finance 1",
-         "ZKRATKA":"EBC-VF"
+         "ZKRATKA":"VF"
       },
       {
          "NAZEV":"Veřejné finance 2",
@@ -1130,11 +1130,11 @@
       },
       {
          "NAZEV":"Virtualizace a cloudové služby",
-         "ZKRATKA":"EBC-VCS"
+         "ZKRATKA":"VCS"
       },
       {
          "NAZEV":"Virtuální instrumentace v LabVIEW",
-         "ZKRATKA":"EBC-VIL"
+         "ZKRATKA":"VIL"
       },
       {
          "NAZEV":"Výběrová šetření",
@@ -1154,19 +1154,19 @@
       },
       {
          "NAZEV":"Vývoj aplikací pro Android 1",
-         "ZKRATKA":"EBC-VA1"
+         "ZKRATKA":"VA1"
       },
       {
          "NAZEV":"Vývoj aplikací pro Android 2",
-         "ZKRATKA":"EBC-VA2"
+         "ZKRATKA":"VA2"
       },
       {
          "NAZEV":"Vývoj aplikací pro iOS 1",
-         "ZKRATKA":"EBC-VI1"
+         "ZKRATKA":"VI1"
       },
       {
          "NAZEV":"Vývoj aplikací pro iOS 2",
-         "ZKRATKA":"EBC-VI2"
+         "ZKRATKA":"VI2"
       },
       {
          "NAZEV":"Vývoj ekonomického myšlení",
@@ -1178,11 +1178,11 @@
       },
       {
          "NAZEV":"Vývoj webových aplikací",
-         "ZKRATKA":"EBC-VWA"
+         "ZKRATKA":"VWA"
       },
       {
          "NAZEV":"Webová grafika a design",
-         "ZKRATKA":"EBC-WGD"
+         "ZKRATKA":"WGD"
       },
       {
          "NAZEV":"Webové aplikace",
@@ -1190,7 +1190,7 @@
       },
       {
          "NAZEV":"Webové aplikace: frontend",
-         "ZKRATKA":"EBC-WAF"
+         "ZKRATKA":"WAF"
       },
       {
          "NAZEV":"Webový design",
@@ -1198,19 +1198,19 @@
       },
       {
          "NAZEV":"Základy kybernetické bezpečnosti",
-         "ZKRATKA":"EBC-ZKB"
+         "ZKRATKA":"ZKB"
       },
       {
          "NAZEV":"Základy objektového návrhu",
-         "ZKRATKA":"EBC-ZOO"
+         "ZKRATKA":"ZOO"
       },
       {
          "NAZEV":"Základy personalistiky",
-         "ZKRATKA":"EBC-ZP"
+         "ZKRATKA":"ZP"
       },
       {
          "NAZEV":"Základy umělé inteligence",
-         "ZKRATKA":"EBC-ZUI"
+         "ZKRATKA":"ZUI"
       },
       {
          "NAZEV":"Zaměření: aplikace pro průmysl 4.0",
@@ -1226,7 +1226,7 @@
       },
       {
          "NAZEV":"Zaměření: řízení podniku",
-         "ZKRATKA":"EBC-ZBRP"
+         "ZKRATKA":"ZBRP"
       },
       {
          "NAZEV":"Zaměření: uživatelská rozhraní",
@@ -1234,19 +1234,19 @@
       },
       {
          "NAZEV":"Zaměření: vývoj mobilních aplikací",
-         "ZKRATKA":"EBC-ZBVMA"
+         "ZKRATKA":"ZBVMA"
       },
       {
          "NAZEV":"Zaměření: vývoj vestavěných systémů",
-         "ZKRATKA":"EBC-ZBVVS"
+         "ZKRATKA":"ZBVVS"
       },
       {
          "NAZEV":"Zaměření: vývoj webových aplikací",
-         "ZKRATKA":"EBC-ZBVWA"
+         "ZKRATKA":"ZBVWA"
       },
       {
          "NAZEV":"Zbožíznalství",
-         "ZKRATKA":"EBC-Z"
+         "ZKRATKA":"Z"
       },
       {
          "NAZEV":"Zkušenosti z mezinárodního prostředí v AJ",
@@ -1258,11 +1258,11 @@
       },
       {
          "NAZEV":"Zpracování dat ve finančních službách",
-         "ZKRATKA":"EBC-ZDFS"
+         "ZKRATKA":"ZDFS"
       },
       {
          "NAZEV":"Zpracování textů na počítači",
-         "ZKRATKA":"EBC-ZTP"
+         "ZKRATKA":"ZTP"
       }
    ]
 }
