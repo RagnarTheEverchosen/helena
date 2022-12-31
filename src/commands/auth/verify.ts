@@ -100,6 +100,7 @@ export default command(meta, async ({ interaction }) => {
 				//TODO: this is bs make a proper token generator
 				const token = Math.floor(100000000 + Math.random() * 900000000);
 				const user = new UserModel({
+					createdAt: new Date(),
 					id: interaction.member?.user.id,
 					token: token,
 					email: email
