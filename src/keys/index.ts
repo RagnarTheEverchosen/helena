@@ -6,7 +6,10 @@ const keys: Keys = {
 	databaseUrl: process.env.DATABASE_URL ?? 'nil',
 	unverifiedRole: process.env.UNVERIFIED_ROLE ?? 'nil',
 	verifiedRole: process.env.VERIFIED_ROLE ?? 'nil',
-	logChannel: process.env.LOG_CHANNEL ?? 'nil'
+	logChannel: process.env.LOG_CHANNEL ?? 'nil',
+	emailUser: process.env.EMAIL_USER ?? 'nil',
+	emailPwd: process.env.EMAIL_PWD ?? 'nil',
+	smtpProvider: process.env.SMTP_PROVIDER ?? 'nil',
 };
 
 if (Object.values(keys).includes('nil'))

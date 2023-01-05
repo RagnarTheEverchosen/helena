@@ -5,4 +5,7 @@ export interface Keys {
 	unverifiedRole: string
 	verifiedRole: string
 	logChannel: string
+	emailUser: string
+	emailPwd: string
+	smtpProvider: string
 };
