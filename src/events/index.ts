@@ -6,7 +6,7 @@ import guildMemberRemove from './guildMemberRemove'
 
 const events: Event<any>[] = [
 	ready,
-	interactionCreate,
+	...interactionCreate,
 	guildMemberAdd,
 	guildMemberRemove,
 ]

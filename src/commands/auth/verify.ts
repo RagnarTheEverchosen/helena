@@ -2,7 +2,6 @@ import { ActionRowBuilder, ButtonBuilder, ButtonStyle, Colors, ComponentType, Em
 import { command } from '../../utils';
 import { isValidEmail, isValidStudent, isUserInDatabase } from '../../verification';
 import { UserModel } from '../../types';
-import { setTimeout } from 'timers/promises';
 
 const meta = new SlashCommandBuilder()
 	.setName('verify')
@@ -108,7 +107,14 @@ export default command(meta, async ({ interaction }) => {
 
 				user.save();
 
-				//TODO: Send email with token
+				var message = {
+					from: "no-reply@mendelubot.cz",
+					to: email,
+					subject: "Verification",
+					html: {
+						path: "../../mail.html"
+					}
+				  };
 
 				interaction.editReply({ 
 				 	embeds: [yesResponse], 
