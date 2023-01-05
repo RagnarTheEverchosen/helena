@@ -7,7 +7,7 @@
     "build": "tsc",
     "start": "node .",
     "dev": "nodemon --config nodemon.json src/index.ts",
-    "deploy": "cross-env IS_SCRIPT=true ts-node src/scripts/deploy",
+    "deploy": "cross-env IS_SCRIPT=true ts-node src/scripts/deploy npm run start",
     "deploy-prod": "cross-env NODE_ENV=production npm run deploy"
   },
   "devDependencies": {
