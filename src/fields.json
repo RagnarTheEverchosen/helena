@@ -1,0 +1,74 @@
+{
+	"OBORY": [
+		{
+			"NAZEV": "Navazující Automatizace řízení a informatika",
+			"ZKRATKA": "DARI",
+			"ID": 1035913473974079558
+		},
+		{
+			"NAZEV": "Navazující Ekonomika a management",
+			"ZKRATKA": "DEM",
+			"ID": 1035913873296982096
+		},
+		{
+			"NAZEV": "Navazující Otevřená informatika",
+			"ZKRATKA": "NOI",
+			"ID": 1019204100702883880
+		},
+		{
+			"NAZEV": "Navazující Ekonomika a management",
+			"ZKRATKA": "NEM",
+			"ID": 1035912492217540678
+		},
+		{
+			"NAZEV": "Navazující Hospodářská politika a správa obor Finance a investiční management",
+			"ZKRATKA": "NFIM",
+			"ID": 1035912611562258482
+		},
+		{
+			"NAZEV": "Nadcházející účetnictví a daně",
+			"ZKRATKA": "NUD",
+			"ID": 1035912692633981009
+		},
+		{
+			"NAZEV": "Administrace IS/ICT",
+			"ZKRATKA": "AII",
+			"ID": 887313553080586241
+		},
+		{
+			"NAZEV": "Automatizace řízení a informatika",
+			"ZKRATKA": "ARI",
+			"ID": 887313702523650068
+		},
+		{
+			"NAZEV": "Ekonomická informatika",
+			"ZKRATKA": "EI",
+			"ID": 887313806185885707
+		},
+		{
+			"NAZEV": "Otevřená informatika",
+			"ZKRATKA": "OI",
+			"ID": 887313848154062909
+		},
+		{
+			"NAZEV": "Ekonomika a management",
+			"ZKRATKA": "EM",
+			"ID": 1035909381449076758
+		},
+		{
+			"NAZEV": "Management obchodu a služeb",
+			"ZKRATKA": "MOS",
+			"ID": 1035912350492004442
+		},
+		{
+			"NAZEV": "Finanční služby",
+			"ZKRATKA": "FS",
+			"ID": 1035912148087492669
+		},
+		{
+			"NAZEV": "Finance",
+			"ZKRATKA": "F",
+			"ID": 1035909759846600734
+		}
+	]
+}
