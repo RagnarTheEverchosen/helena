@@ -27,7 +27,7 @@ export default command(meta, async ({ interaction }) => {
 		.setFooter({ text: 'If the field failed to add, it probably doesn\'t exist or was misspelled.\nIf you are having problems adding your field contact one of the moderators.' });
 
 	const fieldRole = interaction.guild?.roles.cache.find(c => c.name.toLowerCase() === input.toLowerCase());
-	if (!fieldRole || !(OBORY.some(f => f.ZKRATKA === input))) {
+	if (!fieldRole || !(OBORY.some(f => f.name === input))) {
 		response.addFields({ name: input, value: 'Failed to add field' });
 		interaction.editReply({
 			embeds: [response],

@@ -1,8 +1,10 @@
 import { category } from '../../utils';
 import createCourseRooms from './createCourseRooms';
-import setupverify from './setupVerify';
+import setupVerify from './setupVerify';
+import setupFields from './setupFields'; 
 
 export default category('Moderations', [
 	createCourseRooms,
-	setupverify,
+	setupVerify,
+	setupFields,
 ]);

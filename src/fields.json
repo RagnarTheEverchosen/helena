@@ -1,74 +1,60 @@
 {
 	"OBORY": [
 		{
-			"NAZEV": "Navazující Automatizace řízení a informatika",
-			"ZKRATKA": "DARI",
-			"ID": 1035913473974079558
+			"value": "Navazující Automatizace řízení a informatika",
+			"name": "DARI"
 		},
 		{
-			"NAZEV": "Navazující Ekonomika a management",
-			"ZKRATKA": "DEM",
-			"ID": 1035913873296982096
+			"value": "Navazující Ekonomika a management",
+			"name": "DEM"
 		},
 		{
-			"NAZEV": "Navazující Otevřená informatika",
-			"ZKRATKA": "NOI",
-			"ID": 1019204100702883880
+			"value": "Navazující Otevřená informatika",
+			"name": "NOI"
 		},
 		{
-			"NAZEV": "Navazující Ekonomika a management",
-			"ZKRATKA": "NEM",
-			"ID": 1035912492217540678
+			"value": "Navazující Ekonomika a management",
+			"name": "NEM"
 		},
 		{
-			"NAZEV": "Navazující Hospodářská politika a správa obor Finance a investiční management",
-			"ZKRATKA": "NFIM",
-			"ID": 1035912611562258482
+			"value": "Navazující Hospodářská politika a správa obor Finance a investiční management",
+			"name": "NFIM"
 		},
 		{
-			"NAZEV": "Nadcházející účetnictví a daně",
-			"ZKRATKA": "NUD",
-			"ID": 1035912692633981009
+			"value": "Nadcházející účetnictví a daně",
+			"name": "NUD"
 		},
 		{
-			"NAZEV": "Administrace IS/ICT",
-			"ZKRATKA": "AII",
-			"ID": 887313553080586241
+			"value": "Administrace IS/ICT",
+			"name": "AII"
 		},
 		{
-			"NAZEV": "Automatizace řízení a informatika",
-			"ZKRATKA": "ARI",
-			"ID": 887313702523650068
+			"value": "Automatizace řízení a informatika",
+			"name": "ARI"
 		},
 		{
-			"NAZEV": "Ekonomická informatika",
-			"ZKRATKA": "EI",
-			"ID": 887313806185885707
+			"value": "Ekonomická informatika",
+			"name": "EI"
 		},
 		{
-			"NAZEV": "Otevřená informatika",
-			"ZKRATKA": "OI",
-			"ID": 887313848154062909
+			"value": "Otevřená informatika",
+			"name": "OI"
 		},
 		{
-			"NAZEV": "Ekonomika a management",
-			"ZKRATKA": "EM",
-			"ID": 1035909381449076758
+			"value": "Ekonomika a management",
+			"name": "EM"
 		},
 		{
-			"NAZEV": "Management obchodu a služeb",
-			"ZKRATKA": "MOS",
-			"ID": 1035912350492004442
+			"value": "Management obchodu a služeb",
+			"name": "MOS"
 		},
 		{
-			"NAZEV": "Finanční služby",
-			"ZKRATKA": "FS",
-			"ID": 1035912148087492669
+			"value": "Finanční služby",
+			"name": "FS"
 		},
 		{
-			"NAZEV": "Finance",
-			"ZKRATKA": "F",
-			"ID": 1035909759846600734
+			"value": "Finance",
+			"name": "F"
 		}
 	]
 }
