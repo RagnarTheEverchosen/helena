@@ -6,6 +6,7 @@ import nodemailer from 'nodemailer';
 import keys from '../../keys';
 import { verifyEmail } from '../../templates'
 import Mail from 'nodemailer/lib/mailer';
+import { Logger } from '../../logger';
 
 const meta = new SlashCommandBuilder()
 	.setName('verify')
@@ -134,7 +135,7 @@ export default command(meta, async ({ interaction }) => {
 								embeds: [errResponse], 
 								components: [] 
 						   });
-						   console.log(err);
+						   Logger.error('Failed to send verification email', err);
 					} else {
 						const yesResponse = new EmbedBuilder()
 							.setAuthor({ name: 'Verification', iconURL: 'https://cdn4.iconfinder.com/data/icons/basic-ui-colour/512/ui-41-512.png' })

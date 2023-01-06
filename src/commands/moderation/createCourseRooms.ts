@@ -2,6 +2,7 @@ import { CategoryChannel, ChannelType, Colors, EmbedBuilder, GuildBasedChannel, 
 import { command } from '../../utils';
 import { PREDMETY } from '../../courses.json';
 import keys from '../../keys';
+import { Logger } from '../../logger';
 
 const meta = new SlashCommandBuilder()
 	.setName('createcourserooms')
@@ -20,23 +21,28 @@ export default command(meta, async ({ interaction }) => {
 	PREDMETY.forEach(async (course) => {
 		if (await interaction.guild?.channels.cache.find(c => c.name === course.ZKRATKA.toLowerCase() && c.type === ChannelType.GuildText)) return;
 
-		interaction.guild?.channels.create({
-			name: course.ZKRATKA,
-			topic: course.NAZEV,
-			type: ChannelType.GuildText,
-			permissionOverwrites: [
-				{
-					id: keys.unverifiedRole,
-					deny: [PermissionFlagsBits.ViewChannel],
-				},
-				{
-					id: keys.verifiedRole,
-					deny: [PermissionFlagsBits.ViewChannel],
-				}
-			]
-		});
+		try {
+			interaction.guild?.channels.create({
+				name: course.ZKRATKA,
+				topic: course.NAZEV,
+				type: ChannelType.GuildText,
+				permissionOverwrites: [
+					{
+						id: keys.unverifiedRole,
+						deny: [PermissionFlagsBits.ViewChannel],
+					},
+					{
+						id: keys.verifiedRole,
+						deny: [PermissionFlagsBits.ViewChannel],
+					}
+				]
+			});
 
-		response.setDescription(`Course ${course.ZKRATKA} added`)
+			response.setDescription(`Course ${course.ZKRATKA} added`);
+
+		} catch (err) {
+			Logger.error('Failed to create rooms', err);
+		}
 
 		interaction.editReply({
 			embeds: [response]
