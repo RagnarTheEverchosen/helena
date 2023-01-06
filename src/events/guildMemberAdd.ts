@@ -1,19 +1,24 @@
 import { Colors, EmbedBuilder, RoleResolvable, TextChannel } from 'discord.js';
 import { event } from '../utils';
 import keys from '../keys';
+import { Logger } from '../logger';
 
 export default event('guildMemberAdd', ({ log , client}, member) => {
-	log(member.user.tag, member.joinedTimestamp);
+	Logger.info('[USER JOIN]', member.user.tag);
 
 	const unverifiedRole = member.guild.roles.cache.get(keys.unverifiedRole);
 	member.roles.add(unverifiedRole as RoleResolvable, 'joinded guild');
 
 	const joinEmbed = new EmbedBuilder()
 		.setDescription(`<@${member.user.id}> joined the server`)
-		.setColor(Colors.Orange)
+		.setColor(Colors.Orange);
 
 	const logChannel = member.guild.channels.cache.get(keys.logChannel);
-	(logChannel as TextChannel).send({ embeds: [joinEmbed] })
+	if (!logChannel) {
+		Logger.warn('Log channel not found');
+	} else {
+		(logChannel as TextChannel).send({ embeds: [joinEmbed] });
+	}
 
 	const verifyEmbedCZE = new EmbedBuilder()
 		.setDescription('CZE')
@@ -29,4 +34,4 @@ export default event('guildMemberAdd', ({ log , client}, member) => {
 
 	member.user.send({ embeds: [verifyEmbedCZE, verifyEmbedENG] });
 
-})
+});

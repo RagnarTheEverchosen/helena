@@ -1,10 +1,11 @@
 import { connect } from 'mongoose';
 import keys from '../keys';
+import { Logger } from '../logger';
 
 connect(keys.databaseUrl)
 	.then(() => {
-		console.log('[Database] Connected successfuly')
+		Logger.info('Database connected successfuly')
 	})
 	.catch((err) => {
-		console.error('[Database Error]', err);
+		Logger.error('Database connection error', err);
 	});
