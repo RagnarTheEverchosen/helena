@@ -37,11 +37,12 @@ export default command(meta, async ({ interaction }) => {
 					}
 				]
 			});
+
+			response.setDescription(`Course ${course.ZKRATKA} added`);
+
 		} catch (err) {
 			Logger.error('Failed to create rooms', err);
 		}
-
-		response.setDescription(`Course ${course.ZKRATKA} added`)
 
 		interaction.editReply({
 			embeds: [response]
