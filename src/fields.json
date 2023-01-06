@@ -1,0 +1,60 @@
+{
+	"OBORY": [
+		{
+			"value": "Navazující Automatizace řízení a informatika",
+			"name": "DARI"
+		},
+		{
+			"value": "Navazující Ekonomika a management",
+			"name": "DEM"
+		},
+		{
+			"value": "Navazující Otevřená informatika",
+			"name": "NOI"
+		},
+		{
+			"value": "Navazující Ekonomika a management",
+			"name": "NEM"
+		},
+		{
+			"value": "Navazující Hospodářská politika a správa obor Finance a investiční management",
+			"name": "NFIM"
+		},
+		{
+			"value": "Nadcházející účetnictví a daně",
+			"name": "NUD"
+		},
+		{
+			"value": "Administrace IS/ICT",
+			"name": "AII"
+		},
+		{
+			"value": "Automatizace řízení a informatika",
+			"name": "ARI"
+		},
+		{
+			"value": "Ekonomická informatika",
+			"name": "EI"
+		},
+		{
+			"value": "Otevřená informatika",
+			"name": "OI"
+		},
+		{
+			"value": "Ekonomika a management",
+			"name": "EM"
+		},
+		{
+			"value": "Management obchodu a služeb",
+			"name": "MOS"
+		},
+		{
+			"value": "Finanční služby",
+			"name": "FS"
+		},
+		{
+			"value": "Finance",
+			"name": "F"
+		}
+	]
+}
