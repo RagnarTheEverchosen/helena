@@ -2,6 +2,7 @@ import { Colors, EmbedBuilder, GuildMember, RoleResolvable, SlashCommandBuilder,
 import { command } from '../../utils';
 import { isUserTokenValid } from '../../verification';
 import keys from '../../keys';
+import { Logger } from '../../logger';
 
 const meta = new SlashCommandBuilder()
 	.setName('register')
@@ -59,6 +60,10 @@ export default command(meta, async ({ interaction }) => {
 		.setColor(Colors.Green)
 
 	const logChannel = interaction.guild?.channels.cache.get(keys.logChannel);
-	(logChannel as TextChannel).send({ embeds: [registerEmbed] })
+	if (!logChannel) {
+		Logger.warn('Log channel not found');
+	} else {
+		(logChannel as TextChannel).send({ embeds: [registerEmbed] });
+	}
 
 });
