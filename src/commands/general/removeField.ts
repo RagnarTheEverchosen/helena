@@ -29,7 +29,7 @@ export default command(meta, async ({ interaction }) => {
 	const member = interaction.member as GuildMember;
 
 	const fieldRole = interaction.guild?.roles.cache.find(c => c.name.toLowerCase() === input.toLowerCase());
-	if (!fieldRole || !(OBORY.some(f => f.name === input) || !(member.roles.cache.some(r => r.name.toLowerCase() === input.toLowerCase())))) {
+	if (!fieldRole || !(OBORY.some(f => f.name.toLowerCase() === input.toLowerCase()) || !(member.roles.cache.some(r => r.name.toLowerCase() === input.toLowerCase())))) {
 		response.addFields({ name: input, value: 'Failed to remove field' });
 		interaction.editReply({
 			embeds: [response],
